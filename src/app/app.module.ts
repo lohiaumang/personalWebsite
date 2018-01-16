@@ -1,16 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatToolbarModule, MatButtonModule, MatCheckboxModule, MatSidenavModule, MatSidenav, MatIconModule } from '@angular/material';
+import { FirstPageComponent } from './first-page/first-page.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FirstPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

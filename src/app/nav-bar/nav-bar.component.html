@@ -1,0 +1,53 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div>
+
+  <mat-toolbar color="primary">
+      
+    <img style="height: 50px; margin-right: 15px;" src="assets/img/UL.png"/>
+    <span>
+      Umang Lohia
+    </span>
+
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+
+      <a href="#" mat-button>Home</a>
+
+      <a href="#" mat-button>Projects</a>
+
+      <a href="#" mat-button>Education</a>
+
+      <a href="#" mat-button>Download Resume</a>
+    </div>
+
+    <div fxShow="true" fxHide.gt-sm="true">
+        <a href="#" mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></a>
+    </div>
+  </mat-toolbar>
+
+
+  <mat-sidenav-container fxFlexFill>
+    
+    <mat-sidenav #sidenav fxLayout="column" mode="side" position="end" opened="false">
+
+      <div fxLayout="column">
+
+        <a href="#" mat-button>Home</a>
+        
+        <a href="#" mat-button>Projects</a>
+        
+        <a href="#" mat-button>Education</a>
+      
+        <a href="#" mat-button>Download Resume</a>
+
+      </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content fxFlexFill>
+      <app-first-page></app-first-page>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
