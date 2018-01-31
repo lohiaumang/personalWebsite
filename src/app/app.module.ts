@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { MatToolbarModule, MatButtonModule, MatCheckboxModule, MatSidenavModule, MatSidenav, MatIconModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatCheckboxModule, MatSidenavModule, MatSidenav, MatIconModule, MatGridListModule, MatCardModule } from '@angular/material';
 import { FirstPageComponent } from './first-page/first-page.component';
 
 
@@ -25,6 +25,8 @@ import { FirstPageComponent } from './first-page/first-page.component';
     MatCheckboxModule,
     MatSidenavModule,
     MatIconModule,
+    MatGridListModule,
+    MatCardModule,
     FlexLayoutModule
   ],
   providers: [],

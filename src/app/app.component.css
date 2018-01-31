@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Joti+One|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|VT323');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Lato');
+
+.header-font {
+    font-family: "Black Ops One";
+    font-size: 1.8em;
+}
+
+.subtext-font {
+    font-family: "Lato";
+    font-size: 1.2em;
+}

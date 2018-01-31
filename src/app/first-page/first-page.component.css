@@ -1,8 +1,53 @@
-.accent-bg {
-    
+@import url('https://fonts.googleapis.com/css?family=Joti+One|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|VT323');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+h1, h2, h3, h4, h5 {
+    font-family: "Righteous";
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+.header-font {
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cover {
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.light-bg {
+    background-color:white;
+    color: black;
+}
+
+video {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.example-card {
+  width: 200px;
+  max-height: 100%;
+}
+
+.example-header-image {
+  background-image: url('../../assets/img/pokemon-go.jpg');
+  background-size: cover;
 }

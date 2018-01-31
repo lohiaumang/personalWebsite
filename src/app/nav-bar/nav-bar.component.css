@@ -1,7 +1,16 @@
-.example-icon {
-    padding: 0 14px;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 .example-spacer {
     flex: 1 1 auto;
+}
+
+.subtext-font {
+    font-family: "Raleway";
+    font-size: 0.8em;
+}
+
+.header-font {
+    font-family: "Righteous";
 }
