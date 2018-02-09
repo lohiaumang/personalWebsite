@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<h4>{{ data.subTitle }}</h4>
+<div mat-dialog-content>
+  <p>{{ data.description }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button *ngIf="data.githubLink != 'Github Link'" (click)="openGithub()">Visit Github</button>
+  <button mat-button *ngIf="data.url != 'Url'" (click)="openWebsite()">Visit Website</button>
+</div>

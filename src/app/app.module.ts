@@ -6,8 +6,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { MatToolbarModule, MatButtonModule, MatCheckboxModule, MatSidenavModule, MatSidenav, MatIconModule, MatGridListModule, MatCardModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatCheckboxModule, MatSidenavModule, MatSidenav, MatIconModule, MatGridListModule, MatCardModule, MatDialogModule } from '@angular/material';
 import { FirstPageComponent } from './first-page/first-page.component';
+import { FooterComponent } from './footer/footer.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 
@@ -15,7 +17,9 @@ import { FirstPageComponent } from './first-page/first-page.component';
   declarations: [
     AppComponent,
     NavBarComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    FooterComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,10 @@ import { FirstPageComponent } from './first-page/first-page.component';
     MatIconModule,
     MatGridListModule,
     MatCardModule,
+    MatDialogModule,
     FlexLayoutModule
   ],
+  entryComponents: [DialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

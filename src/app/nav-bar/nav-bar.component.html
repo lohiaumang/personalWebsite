@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div>
 
-  <mat-toolbar>
+  <mat-toolbar class="sticky">
       
     <!-- <img style="height: 50px; margin-right: 15px;" src="assets/img/UL_1.png"/> -->
     <p class="header-font"><strong>Umang Lohia</strong></p>
@@ -12,11 +12,13 @@
 
       <a class="subtext-font" href="#" mat-button>Home</a>
 
-      <a class="subtext-font" href="#" mat-button>My Works</a>
+      <a class="subtext-font" href="#myWorks" mat-button>My Works</a>
 
-      <a class="subtext-font" href="#" mat-button>Education</a>
+      <a class="subtext-font" href="#myExperience" mat-button>My Experience</a>
 
-      <a class="subtext-font" href="#" mat-button>Download Resume</a>
+      <a class="subtext-font" href="#myEducation" mat-button>My Education</a>
+
+      <a class="subtext-font but" href="../../assets/files/Resume.pdf" target="_self" download="umangLohiaResume.pdf" mat-button>Download Resume</a>
     </div>
 
     <div fxShow="true" fxHide.gt-sm="true">
@@ -45,6 +47,7 @@
 
     <mat-sidenav-content fxFlexFill>
       <app-first-page></app-first-page>
+      <app-footer></app-footer>
     </mat-sidenav-content>
 
   </mat-sidenav-container>

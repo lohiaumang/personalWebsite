@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+h1, h2, h3, h4, h5 {
+    font-family: "Righteous";
+}
+
+a, p, button {
+    font-family: "Raleway";
+}
+
+h4 {
+    font-weight: 100;
+}

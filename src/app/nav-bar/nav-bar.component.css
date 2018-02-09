@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+a:hover {
+    color: #f99882;
+    text-decoration: none;
+}
+
 .example-spacer {
     flex: 1 1 auto;
 }
@@ -13,4 +18,30 @@
 
 .header-font {
     font-family: "Righteous";
+    /* color: #f99882; */
+}
+
+mat-toolbar {
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.but {
+    background-color: #f99882;
+    /* border-style: solid; */
+    /* color: black; */
+    font-weight: bold;
+    /* border-width: 1px; */
+}
+
+.but:hover {
+    background-color: white;
 }

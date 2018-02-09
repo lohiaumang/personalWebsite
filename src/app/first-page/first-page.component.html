@@ -17,47 +17,102 @@
     </span>
   </div>
 </div>
-<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
+<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myWorks">
     <div fxFlex="50" fxFlexAlign="center" class="text-center">
         <h1 class="header-font">My Works</h1>
-        <mat-grid-list cols="2" rowHeight="1.5:1">
-          <mat-grid-tile>
-            <mat-card class="example-card">
-              <img mat-card-image src="assets/img/pokemon-go.jpg" alt="Pokemon Go">
+        <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
+          <div fxFlex="50" fxFlexAlign="center" class="text-center">
+            <mat-card class="example-card margin-top" (click)="openWorksDialog('PGo')">
+              <img mat-card-image src="assets/img/pokemon-go.png" alt="Pokemon Go">
               <mat-card-content>
                 <p>Pokemon Go Location Sharing App</p>
               </mat-card-content>
             </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card class="example-card">
-              <img mat-card-image src="assets/img/reach-out.jpg" alt="Reach Out">
+          </div>
+          <div fxFlex="50" fxFlexAlign="center" class="text-center">
+            <mat-card class="example-card margin-top" (click)="openWorksDialog('IFRW')">
+              <img mat-card-image src="assets/img/inhabitr.JPG" alt="Inhabitr">
+              <mat-card-content>
+                <p>Inhabitr Furniture Rental Website</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
+          <div fxFlex="50" fxFlexAlign="center" class="text-center">
+            <mat-card class="example-card margin-top" (click)="openWorksDialog('ESay')">
+              <img mat-card-image src="assets/img/eversay.png" alt="Ever Say">
+              <mat-card-content>
+                <p>EverSay</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div fxFlex="50" fxFlexAlign="center" class="text-center">
+            <mat-card class="example-card margin-top" (click)="openWorksDialog('ROut')">
+              <img mat-card-image src="assets/img/reach-out.png" alt="Reach Out">
               <mat-card-content>
                 <p>Reach Out</p>
               </mat-card-content>
             </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-              <mat-card class="example-card">
-                <img mat-card-image src="assets/img/ever-say.jpg" alt="Ever Say">
-                <mat-card-content>
-                  <p>EverSay</p>
-                </mat-card-content>
-              </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card class="example-card">
-              <img mat-card-image src="assets/img/ever-say.jpg" alt="Ever Say">
-              <mat-card-content>
-                <p>RC Hovercraft</p>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-        </mat-grid-list>
+          </div>
+        </div>
     </div>
-    <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/my-works.jpg"/></div>
+    <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/my-works-2.jpg"/></div>
 </div>
-<!-- <video>
+
+<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myExperience">
+  <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/job.jpg"/></div>
+  <div fxFlex="50" fxFlexAlign="center" class="text-center">
+    <h1 class="header-font">My Experience</h1>
+    <mat-card class="job-card" (click)="openExperienceDialog('Inhabitr')">
+      <div id="inhabitr-avatar"></div>
+      <mat-card-title>Inhabitr Inc.</mat-card-title>
+      <mat-card-subtitle>June, 2017 - Present</mat-card-subtitle>
+      <mat-card-content>        
+        <p>Software Development Engineer</p>
+        <p>Product Lead</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="job-card" (click)="openExperienceDialog('Amazon')">
+      <div id="amazon-avatar"></div>
+      <mat-card-title>Amazon</mat-card-title>
+      <mat-card-subtitle>Summer, 2016</mat-card-subtitle>
+      <mat-card-content>
+        <p>Software Development Engineer Intern</p>
+        <p>Kindle Xray Team</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myEducation">
+  <div fxFlex="50" fxFlexAlign="center" class="text-center">
+      <h1 class="header-font pad-top">My Education</h1>
+      <p>B.S.E. in Computer Science</p>
+      <p>University of Michigan, Ann Arbor</p>
+      <p>Class of 2017</p>
+      <h3>Relevant Coursework</h3>
+      <div class="padding">
+        <p><strong>Data Structures And Algorithms:</strong></p>
+        <p> Implemented a solution to the Travelling Salesman Problem (a NP-hard
+        problem) using a permutation generator and a branch and bound algorithm. Built a stock exchange simulator using hash
+        maps and priority queues. Implemented a minimum spanning tree.</p>
+        <p><strong>Computer Security:</strong></p>
+        <p>Carried out CSRF, XSS, and SQL injection attacks on unsafe websites. Exploited buffer
+        overflow and learned how to prevent these vulnerabilities. Learned about cryptography and broke simple ciphers.</p>
+        <p><strong>Operating Systems:</strong></p>
+        <p> Implemented a thread library with mutex locks, and condition variables. Created a
+        multi-threaded network file server using sockets, hand-over-hand locking, inodes, directory entries, and disk blocks
+        that implemented read, write, create, and delete functionality. Also dealt with resilience and security.</p>
+        <p><strong>User Interfaces:</strong></p>
+        <p>Created an asteroid destroying game in Javascript that ran on the browser. In the process of
+        creating a web application to manage student interactions in on-campus housing using Javascript, and AngularJS.</p>
+      </div>
+  </div>
+  <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/education.jpg"/></div>
+</div>
+<!--
+   <video>
   <source src="assets/video/bg.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> -->
