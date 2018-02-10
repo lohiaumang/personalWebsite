@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
-  <div fxFlex="50" fxHide.lt-md="true">
+  <div fxFlex="50" fxFlexAlign="center" fxHide.lt-md="true">
     <img style="width: 100%; height: 100%" src="assets/img/COVER.jpg"/>
     <!-- <img src="assets/img/bg.png">
     <span class="centered">
@@ -19,7 +19,7 @@
 </div>
 <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myWorks">
     <div fxFlex="50" fxFlexAlign="center" class="text-center">
-        <h1 class="header-font">My Works</h1>
+        <h2 class="header-font">My Work</h2>
         <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
           <div fxFlex="50" fxFlexAlign="center" class="text-center">
             <mat-card class="example-card margin-top" (click)="openWorksDialog('PGo')">
@@ -57,13 +57,15 @@
           </div>
         </div>
     </div>
-    <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/my-works-2.jpg"/></div>
+    <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/optimizilla/my-works-2.jpg"/></div>
+    <!-- <div fxFlex="50" fxFlexAlign="center" fxHide.lt-md="true"><img style="width: 80%; height: 80%" src="assets/img/UL/2.png"/></div> -->
+    
 </div>
 
 <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myExperience">
-  <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/job.jpg"/></div>
+  <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/optimizilla/job.jpg"/></div>
   <div fxFlex="50" fxFlexAlign="center" class="text-center">
-    <h1 class="header-font">My Experience</h1>
+    <h2 class="header-font">My Experience</h2>
     <mat-card class="job-card" (click)="openExperienceDialog('Inhabitr')">
       <div id="inhabitr-avatar"></div>
       <mat-card-title>Inhabitr Inc.</mat-card-title>
@@ -85,7 +87,7 @@
   </div>
 </div>
 
-<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myEducation">
+<!-- <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myEducation">
   <div fxFlex="50" fxFlexAlign="center" class="text-center">
       <h1 class="header-font pad-top">My Education</h1>
       <p>B.S.E. in Computer Science</p>
@@ -107,6 +109,52 @@
         <p><strong>User Interfaces:</strong></p>
         <p>Created an asteroid destroying game in Javascript that ran on the browser. In the process of
         creating a web application to manage student interactions in on-campus housing using Javascript, and AngularJS.</p>
+      </div>
+  </div>
+  <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/education.jpg"/></div>
+</div> -->
+
+<div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg" id="myEducation">
+  <div fxFlex="50" fxFlexAlign="center" class="text-center">
+      <h2 class="header-font pad-top">My Education</h2>
+      <p>B.S.E. in Computer Science, 2017</p>
+      <p>University of Michigan, Ann Arbor</p>
+      <h3>Relevant Coursework</h3>
+      <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
+        <div fxFlex="50" fxFlexAlign="center" class="text-center">
+          <mat-card class="example-card margin-top" (click)="openEducationDialog('DSA')">
+            <img mat-card-image src="assets/img/Umanglohia/structures.png" alt="Data Structures and Algorithms">
+            <mat-card-content>
+              <p>Data Structures and Algorithms</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div fxFlex="50" fxFlexAlign="center" class="text-center">
+          <mat-card class="example-card margin-top" (click)="openEducationDialog('CS')">
+            <img mat-card-image src="assets/img/Umanglohia/security.png" alt="Computer Security">
+            <mat-card-content>
+              <p>Computer Security</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayout.lt-md="column" fxFlexFill class="cover light-bg">
+        <div fxFlex="50" fxFlexAlign="center" class="text-center">
+          <mat-card class="example-card margin-top" (click)="openEducationDialog('OS')">
+            <img mat-card-image src="assets/img/Umanglohia/os.png" alt="Operating Systems">
+            <mat-card-content>
+              <p>Operating Systems</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div fxFlex="50" fxFlexAlign="center" class="text-center">
+          <mat-card class="example-card margin-top" (click)="openEducationDialog('UI')">
+            <img mat-card-image src="assets/img/Umanglohia/interfaces.png" alt="User Interfaces">
+            <mat-card-content>
+              <p>User Interfaces</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
       </div>
   </div>
   <div fxFlex="50" fxHide.lt-md="true"><img style="width: 100%; height: 100%" src="assets/img/education.jpg"/></div>

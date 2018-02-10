@@ -101,4 +101,39 @@ export class FirstPageComponent implements OnInit {
     });
   }
 
+  openEducationDialog(choice): void {
+    this.title = 'Title';
+    this.description = 'Description';
+    this.url = 'Url';
+    this.githubLink = 'Github Link';
+    if(choice === "DSA") {
+      this.title = 'Data Structures and Algorithms';
+      this.description = 'Implemented a solution to the Travelling Salesman Problem (a NP-hard problem) using a permutation generator and a branch and bound algorithm. Built a stock exchange simulator using hash maps and priority queues. Implemented a minimum spanning tree.';
+    } else if(choice === 'CS') {
+      this.title = 'Computer Security';
+      this.description = 'Carried out CSRF, XSS, and SQL injection attacks on unsafe websites. Exploited buffer overflow and learned how to prevent these vulnerabilities. Learned about cryptography and broke simple ciphers.';
+    } else if(choice === 'OS') {
+      this.title = 'Operating Systems';
+      this.description = 'Implemented a thread library with mutex locks, and condition variables. Created a multi-threaded network file server using sockets, hand-over-hand locking, inodes, directory entries, and disk blocks that implemented read, write, create, and delete functionality. Also dealt with resilience and security.';
+    } else if(choice === 'UI') {
+      this.title = 'User Interfaces';
+      this.description = 'Created an asteroid destroying game in Javascript that ran on the browser. In the process of creating a web application to manage student interactions in on-campus housing using Javascript, and AngularJS.';
+    } else {
+      return;
+    }
+    let dialogRef = this.dialog.open(DialogComponent, {
+      width: '50%',
+      data: { 
+        title: this.title, 
+        description: this.description,
+        url: this.url,
+        githubLink: this.githubLink
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed' + result);
+    });
+  }
+
 }

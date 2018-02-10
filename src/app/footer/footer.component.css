@@ -10,13 +10,13 @@ p, a {
 }
 
 .footer {
-    border-top-color: #f99882;
+    border-top-color: #ed254e;
     border-top-style: solid;
     border-top-width: 5px;
     padding: 2%;
     padding-bottom: 0;
     /* text-align: center; */
-    background-color: black;
+    background-color: #0B0033;
     color: white;
 }
 
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-    color: #f99882;
+    color: #ed254e;
     text-decoration: none;
 }
 

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 a:hover {
-    color: #f99882;
+    color: #ed254e;
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ a:hover {
 }
 
 mat-toolbar {
-    background-color: black;
+    background-color: #0B0033;
     color: white;
     /* position: fixed; */
 }
@@ -35,7 +35,7 @@ mat-toolbar {
 }
 
 .but {
-    background-color: #f99882;
+    background-color: #ed254e;
     /* border-style: solid; */
     /* color: black; */
     font-weight: bold;
